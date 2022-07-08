@@ -1,0 +1,29 @@
+#+TITLE: Node Docker ECS tutorial
+
+I'm learning to deploy to ECS
+
+* Step 1 create a node app
+it's just a hello worldy
+
+* Docker tag command
+
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+
+image names are optionally prefixed by a hostname
+
+no hostname => docker public registry
+
+* Open repo to learn commands for how to push to that repo
+
+Since these commands are completely opaque in terms of meaning and super long
+and not human-friendly, I'm assuming we're supposed to script them away.
+
+* Pattern
+
+It seems like the pattern is going to be
+
+1. Figure out what resources to add
+2. add those to the terraform file
+3. apply those with `terraform apply`
+
+**
